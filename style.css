@@ -58,9 +58,10 @@ html {
 .nav--header {
     display: grid;
     grid-gap: 1.5rem;
-    justify-items: start;
     width: min(90%, 500px);
     justify-self: center;
+    position: relative;
+    top: -8rem;
 }
 
 .hide {
@@ -243,6 +244,9 @@ html {
 .icon {
     position: relative;
 }
+.nav__link{
+    justify-self: start;
+}
 
 @media only screen and (min-width: 600px){
     .page__header{
@@ -268,6 +272,7 @@ html {
         justify-self: start;
         width: 95%;
         padding-left: 5rem;
+        top: 0;
     }
 }
 
