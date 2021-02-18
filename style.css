@@ -51,11 +51,12 @@ html {
     text-transform: uppercase;
     transition: top .5s ease-in-out;
 }
-.page__hamburgerMenu--isActive{
+
+.page__hamburgerMenu--isActive {
     top: 0;
 }
 
-.nav--header {
+.nav--burger {
     display: grid;
     grid-gap: 1.5rem;
     width: min(90%, 500px);
@@ -94,18 +95,21 @@ html {
     width: 90%;
 }
 
+.article__container{
+    padding: 0 2.5rem;
+    font-size: clamp(.6rem, 1.5vw, 1.2rem);
+}
+
 .article__title {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-top: 3rem;
     margin-bottom: 0;
-
 }
 
 .article__text {
     text-align: center;
-    padding: 0 2.5rem;
     line-height: 1.5;
     opacity: 0.7;
 }
@@ -212,6 +216,14 @@ html {
     width: 185px;
 }
 
+.nav--header {
+    display: none;
+    margin: 2rem 5rem 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 .nav__social {
     padding: 1rem 0 1rem 0;
     display: flex;
@@ -244,12 +256,13 @@ html {
 .icon {
     position: relative;
 }
-.nav__link{
+
+.nav__link {
     justify-self: start;
 }
 
-@media only screen and (min-width: 600px){
-    .page__header{
+@media only screen and (min-width: 600px) {
+    .page__header {
         background: url("images/desktop/image-hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -257,18 +270,22 @@ html {
         height: 65%;
         padding-left: 5rem;
     }
-    .page__mainTitle{
+
+    .page__mainTitle {
         height: 60%;
         justify-self: start;
     }
-    .page__logoContainer{
+
+    .page__logoContainer {
         justify-self: start;
         width: 95%;
     }
-    .page__hamburgerMenu{
+
+    .page__hamburgerMenu {
         margin-left: -5rem;
     }
-    .nav--header{
+
+    .nav--burger {
         justify-self: start;
         width: 95%;
         padding-left: 5rem;
@@ -276,8 +293,51 @@ html {
     }
 }
 
-@media only screen and (min-width: 1500px){
-    .page__header{
+@media only screen and (min-width: 1081px) {
+    .page__hamburger {
+        display: none;
+    }
+
+    .nav--header {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .article__image{
+        width: 60%;
+        min-width: 500px;
+        z-index: 1;
+        justify-self: start;
+    }
+    .article__container{
+        min-width: 380px;
+        width: min(60%, 800px);
+        z-index: 2;
+        position: absolute;
+        background: white;
+        bottom: -5%;
+        right: -5%;
+        padding: 2rem 4rem;
+    }
+    .article__title{
+        text-align: start;
+    }
+    .article__text{
+        text-align: start;
+    }
+    .article{
+        position: relative;
+        width: min(90%, 1400px);
+    }
+    .page__content{
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .page__header {
         background-position: unset;
     }
 }
