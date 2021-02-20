@@ -39,4 +39,5 @@ const changeImg = () => {
 
 showBtn.addEventListener('click', showMenu);
 hideBtn.addEventListener('click', hideMenu);
+window.addEventListener('DOMContentLoaded', changeImg);
 window.addEventListener('resize', changeImg);
