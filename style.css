@@ -38,7 +38,7 @@ html {
 
 .page__hamburgerMenu {
     background: black;
-    width: 100%;
+    width: 100vw;
     height: inherit;
     position: absolute;
     top: -100%;
@@ -97,7 +97,7 @@ html {
 
 .article__container{
     padding: 0 2.5rem;
-    font-size: clamp(.6rem, 1.5vw, 1.2rem);
+    font-size: clamp(.9rem, 1.5vw, 1.2rem);
 }
 
 .article__title {
@@ -195,14 +195,13 @@ html {
 }
 
 .page__footer {
-    height: 60%;
-    margin-top: 5rem;
+    height: 40%;
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
 }
 .page__container--right{
     display: flex;
@@ -341,7 +340,8 @@ html {
     .page__footer{
         flex-direction: row;
         justify-content: space-around;
-        height: 20%;
+        height: 15%;
+        margin-top: 4rem;
     }
     .nav--footer{
         flex-direction: row;
