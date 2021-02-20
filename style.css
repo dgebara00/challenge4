@@ -195,7 +195,7 @@ html {
 }
 
 .page__footer {
-    height: 40%;
+    height: 45%;
     background-color: black;
     color: white;
     display: flex;
@@ -237,7 +237,6 @@ html {
     display: none;
     margin: 2rem 5rem 0 0;
     color: #fff;
-    cursor: pointer;
     font-size: 1.5rem;
 }
 
@@ -271,6 +270,7 @@ html {
 
 .icon {
     position: relative;
+    cursor: pointer;
 }
 
 .nav__link {
