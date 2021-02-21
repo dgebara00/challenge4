@@ -383,7 +383,7 @@ html {
     }
     .article{
         position: relative;
-        width: min(90%, 1150px);
+        width: min(90%, 1400px);
     }
     .page__content{
         display: grid;
