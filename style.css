@@ -38,7 +38,7 @@ html {
 
 .page__hamburgerMenu {
     background: black;
-    width: 100vw;
+    width: 100%;
     height: inherit;
     position: absolute;
     top: -100%;
@@ -75,14 +75,15 @@ html {
     align-self: start;
     text-transform: uppercase;
     min-width: 320px;
-    width: min(90%, 500px);
+    width: min(90%, 600px);
     justify-self: center;
-    font-size: clamp(2rem, 7vw, 3rem);
+    font-size: clamp(2.5rem, 8vw, 4rem);
     padding: 2rem;
-    letter-spacing: 5px;
-    line-height: clamp(2rem, 7vw, 3rem);
+    line-height: clamp(2.5rem, 8vw, 4rem);
     font-weight: 300;
     grid-column: span 2;
+    display: grid;
+    align-items: center;
 }
 
 .article {
@@ -103,15 +104,16 @@ html {
 .article__title {
     text-transform: uppercase;
     text-align: center;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     margin-top: 3rem;
+    font-weight: 300;
     margin-bottom: 0;
 }
 
 .article__text {
     text-align: center;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .page__creations {
@@ -130,7 +132,7 @@ html {
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .page__poster {
@@ -159,7 +161,7 @@ html {
     position: absolute;
     z-index: 2;
     text-transform: uppercase;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 1.25rem;
@@ -195,7 +197,7 @@ html {
 }
 
 .page__footer {
-    height: 45%;
+    height: 50%;
     background-color: black;
     color: white;
     display: flex;
@@ -217,16 +219,11 @@ html {
 
 .nav--footer {
     display: flex;
+    padding-top: 1rem;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
     gap: 1.5rem;
-}
-
-.nav--footer>* {
-    flex: 1;
 }
 
 .page__logo--footer {
@@ -340,7 +337,7 @@ html {
     .page__footer{
         flex-direction: row;
         justify-content: space-around;
-        height: 15%;
+        height: 20%;
         margin-top: 4rem;
     }
     .nav--footer{
@@ -348,6 +345,9 @@ html {
     }
     .page__container--right{
         align-items: end;
+    }
+    .page__posterTitle{
+        font-size: 2.1rem;
     }
 }
 
@@ -359,24 +359,29 @@ html {
         justify-self: start;
     }
     .article__container{
-        min-width: 380px;
-        width: min(60%, 800px);
+        min-width: 400px;
+        width: min(50%, 800px);
         z-index: 2;
         position: absolute;
         background: white;
-        bottom: -5%;
-        right: -5%;
-        padding: 2rem 4rem;
+        bottom: -15%;
+        right: 2%;
+        padding: 4rem 3rem;
     }
     .article__title{
         text-align: start;
+        margin: 0;
+        padding: 0;
     }
     .article__text{
+        font-size: .8rem;
         text-align: start;
+        margin: .5rem 0 0 0;
+        width: 90%;
     }
     .article{
         position: relative;
-        width: min(90%, 1400px);
+        width: min(90%, 1150px);
     }
     .page__content{
         display: grid;
