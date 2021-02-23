@@ -43,9 +43,8 @@ html {
     position: absolute;
     top: -100%;
     color: white;
-    display: grid;
-    place-items: center;
-    align-items: center;
+    display: none;
+    justify-items: center;
     font-weight: 300;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
