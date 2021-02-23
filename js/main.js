@@ -5,7 +5,6 @@ const images = document.querySelectorAll('.page__image');
 
 
 const showMenu = () => {
-    menu.style.display = 'grid';
     showBtn.classList.add('hide');
     menu.classList.add('page__hamburgerMenu--isActive');
     hideBtn.classList.remove('hide');
