@@ -29,7 +29,7 @@ html {
     align-self: start;
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     justify-content: space-between;
     margin-top: 2rem;
     width: min(90%, 500px);
@@ -39,7 +39,7 @@ html {
 .page__hamburgerMenu {
     background: black;
     width: 100%;
-    height: inherit;
+    height: 100vh;
     position: absolute;
     top: -100%;
     color: white;
@@ -50,6 +50,7 @@ html {
     font-size: 2rem;
     text-transform: uppercase;
     transition: top .5s ease-in-out;
+    z-index: 3;
 }
 
 .page__hamburgerMenu--isActive {
